@@ -80,13 +80,15 @@ const { title, description, authors, categories, image, date, tags } =
       <div class="col-12 mt-8 mb-2">
         {
           image && (
-            <Image
-              src={image}
-              height={500}
-              width={1000}
-              alt={title}
-              class="rounded-lg"
-            />
+            <div class="max-w-[800px] mx-auto">
+              <Image
+                src={image}
+                height={400}
+                width={800}
+                alt={title}
+                class="rounded-lg w-full h-auto object-cover"
+              />
+            </div>
           )
         }
       </div>
